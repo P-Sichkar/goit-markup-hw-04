@@ -183,11 +183,22 @@ img {
 /* --------------------------HERO-------------------------- */
 
 .hero {
-  background-color: #2f303a;
+  /* background-color: #2f303a; */
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/bc-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1600px;
+  margin: 0 auto;
+
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  /* margin-left: auto;
+  margin-right: auto; */
 }
+
 .hero-text {
   font-weight: 900;
   font-size: 44px;
@@ -302,7 +313,6 @@ img {
 
 .team-list {
   display: flex;
-
   margin-left: -30px;
 }
 
@@ -312,8 +322,10 @@ img {
   background-color: #ffffff;
 }
 
-.team-member-image {
-  margin-bottom: 30px;
+.team-text {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-member {
@@ -331,7 +343,25 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--team-subtitle-color);
-  padding-bottom: 30px;
+
+  margin-bottom: 16px;
+}
+
+.team-soc-list {
+  display: flex;
+  justify-content: center;
+}
+
+.team-soc-item + .team-soc-item {
+  margin-left: 10px;
+}
+
+.team-soc-link {
+  width: 44px;
+  height: 44px;
+  background-color: tomato;
+  border-radius: 50%;
+  display: block;
 }
 
 /* --------------------------FOOTER-------------------------- */
