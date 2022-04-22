@@ -20,6 +20,9 @@
   --batton-filter-background-color: #f5f4fa;
   --batton-filter-text-color: #212121;
   --projects-subtitle-color: #757575;
+  --icon-main-color: #afb1b8;
+  --icon-main-focus-color: #ffffff;
+  --icon-main-focus-background-color: #2196f3;
   --margin-foto: 30px;
   --margin-title: 50px;
   --margin-subtitle: 10px;
@@ -359,10 +362,23 @@ img {
 .team-soc-link {
   width: 44px;
   height: 44px;
-  background-color: tomato;
+
   border-radius: 50%;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  fill: var(--icon-main-color);
 }
+
+.team-soc-link:hover {
+  background-color: var(--icon-main-focus-background-color);
+  fill: var(--icon-main-focus-color);
+}
+
+/* .team-soc-icon {
+  fill: var(--icon-main-color);
+} */
 
 /* --------------------------FOOTER-------------------------- */
 .footer {
