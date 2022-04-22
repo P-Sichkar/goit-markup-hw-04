@@ -82,6 +82,7 @@ img {
 .feature,
 .function,
 .team,
+.clients,
 .projects {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
@@ -362,8 +363,8 @@ img {
 .team-soc-link {
   width: 44px;
   height: 44px;
-
   border-radius: 50%;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -379,6 +380,51 @@ img {
 /* .team-soc-icon {
   fill: var(--icon-main-color);
 } */
+
+/* --------------------------CLIENTS-------------------------- */
+
+.clients-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--dominant-text-color);
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+
+.clients-item {
+  padding: 16px 32px;
+  width: 170px;
+  border: 1px solid #afb1b8;
+
+  border-radius: 4px;
+}
+
+.clients-item + .clients-item {
+  margin-left: 30px;
+}
+
+.clients-link {
+  display: flex;
+  /* padding: 16px 32px; */
+  justify-content: center;
+  align-items: center;
+
+  fill: var(--icon-main-color);
+}
+
+.clients-link:hover {
+  fill: currentColor;
+}
+.clients-item:hover {
+  border-color: var(--icon-main-focus-background-color);
+  fill: var(--icon-main-focus-background-color);
+}
 
 /* --------------------------FOOTER-------------------------- */
 .footer {
