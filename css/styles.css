@@ -452,6 +452,11 @@ img {
   padding-bottom: 60px;
 }
 
+.footer-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .contacts {
   margin-top: 20px;
 }
