@@ -287,6 +287,16 @@ img {
   color: var(--feature-subtitle-color);
 }
 
+.feature-icon {
+  display: flex;
+  padding: 25px 100px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
 /* --------------------------FUNCTION-------------------------- */
 
 .function {
@@ -334,6 +344,10 @@ img {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   background-color: #ffffff;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-text {
@@ -368,16 +382,6 @@ img {
 
 .team-soc-item + .team-soc-item {
   margin-left: 10px;
-}
-
-.feature-icon {
-  display: flex;
-  padding: 25px 100px;
-  justify-content: center;
-  align-items: center;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  margin-bottom: 30px;
 }
 
 .team-soc-link {
@@ -454,7 +458,7 @@ img {
 
 .footer-box {
   display: flex;
-  flex-wrap: wrap;
+  align-items: baseline;
 }
 
 .contacts {
@@ -491,6 +495,59 @@ img {
   color: var(--footer-contact-color);
 }
 
+.footer-soc {
+  margin-left: 70px;
+}
+
+.footer-soc-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+  align-items: flex-end;
+}
+
+.footer-soc-list {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer-soc-item + .footer-soc-item {
+  margin-left: 10px;
+}
+
+.footer-soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
+}
+
+.footer-soc-link.twitter {
+  background-color: #2196f3;
+  fill: #ffffff;
+}
+
+/* /* .footer-soc-link.twitter:focus,
+.footer-soc-link.twitter:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
+} */
+
+/* .footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: var(--icon-main-focus-background-color);
+  fill: var(--icon-main-focus-color);
+} */
+
 /* --------------------------Filter-PORTFOLIO-------------------------- */
 
 .filter-list {
@@ -523,8 +580,12 @@ img {
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
+
   color: var(--batton-filter-focus-text-color);
   background-color: var(--batton-filter-focus-background-color);
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .projects-list {
@@ -543,6 +604,13 @@ img {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
+}
+
+.projects-item:hover,
+.projects-item:focus {
+  cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projects-name {
