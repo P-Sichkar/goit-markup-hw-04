@@ -256,7 +256,6 @@ img {
 .feature-item {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
-  min-width: 270px;
 }
 
 .visually-hidden {
@@ -289,7 +288,7 @@ img {
 
 .feature-icon {
   display: flex;
-  padding: 25px 100px;
+  height: 120px;
   justify-content: center;
   align-items: center;
   background-color: #f5f4fa;
@@ -396,7 +395,8 @@ img {
   fill: var(--icon-main-color);
 }
 
-.team-soc-link:hover {
+.team-soc-link:hover,
+.team-soc-link:focus {
   background-color: var(--icon-main-focus-background-color);
   fill: var(--icon-main-focus-color);
 }
@@ -443,7 +443,9 @@ img {
 }
 
 .clients-item:hover,
-.clients-link:hover {
+.clients-link:hover,
+.clients-item:focus,
+.clients-link:focus {
   border-color: var(--icon-main-focus-background-color);
   fill: var(--icon-main-focus-background-color);
 }
@@ -531,22 +533,11 @@ img {
   fill: #ffffff;
 }
 
-.footer-soc-link.twitter {
-  background-color: #2196f3;
-  fill: #ffffff;
-}
-
-/* /* .footer-soc-link.twitter:focus,
-.footer-soc-link.twitter:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  fill: #ffffff;
-} */
-
-/* .footer-soc-link:hover,
+.footer-soc-link:hover,
 .footer-soc-link:focus {
   background-color: var(--icon-main-focus-background-color);
   fill: var(--icon-main-focus-color);
-} */
+}
 
 /* --------------------------Filter-PORTFOLIO-------------------------- */
 
